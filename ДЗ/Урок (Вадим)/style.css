@@ -1,0 +1,86 @@
+.part-1st input:focus { /* Псевдокласс описывающий событие, когда целью выбран элемент формы (input, textarea, select) */
+	background-color: red;
+}
+
+.part-1st input:hover { /* Псевдокласс описывающий событие, когда курсор находится над элементом */
+	background-color: blue;
+}
+
+.part-1st div {
+	width: 100px;
+	height: 100px;
+	background-color: blue;
+}
+
+.part-1st div:hover {
+	background-color: green;
+}
+
+.part-1st div:active{ /* Псевдокласс описывающий событие, когда на элемент происходит клик левой кнопкой мыши */
+	background-color: lightgrey;
+}
+
+.part-2nd li {
+	background-color: red;
+}
+
+.part-2nd li:first-child { /* Псевдоэлемент описывающий первый дочерний элемент */
+	background-color: blue;
+}
+
+.part-2nd li:last-child { /* Псевдоэлемент описывающий последний дочерний элемент */
+	background-color: green;
+}
+
+.part-2nd li:nth-child(2n+5) { /* Псевдоэлемент описывающий коллекцию дочерних элементов: 2n - парные, +5 - начиная с 5го */
+	background-color: grey;
+}
+
+.part-2nd li:nth-child(-2n+5) { /* Псевдоэлемент описывающий коллекцию дочерних элементов: в порядке с конца, 2n - парные, +5 - начиная с 5го */
+	background-color: black;
+}
+
+.part-2nd li:nth-child(even) { /* Псевдоэлемент с ключивым словом описывающим парные (четные) дочерние элементы  */
+	background-color: lightgrey;
+}
+
+.part-2nd li:nth-child(odd) { /* Псевдоэлемент с ключивым словом описывающим непарные (нечетные) дочерние элементы  */
+	background-color: yellow;
+}
+
+.part-2nd input {
+	background-color: #ccc;
+}
+
+.part-2nd input:not([placeholder]) { /* Псевдоэлемент :not(selector) описывающий отстутствие указанного селектора у элемента */
+	background-color: #fff;
+}
+
+.part-3rd div {
+	background-color: lightgrey;
+}
+
+.part-3rd div section:first-child {
+	width: 20%;
+	float: left;
+}
+
+.part-3rd div section:last-child {
+	width: 70%;
+	float: right;
+}
+
+.part-3rd div:after{ /* Псевдоэлемент описывающий конец указанного элемента */
+	content: ''; /* Наличие свойства обязательно */
+	display: block;
+	clear: both;
+}
+
+.part-3rd section::selection { /* Псевдоэлемент описывающий выделение текста */
+	background-color: #000000;
+	color: #ffffff;
+}
+
+.part-3rd body { /* Подключение семейства шрифтов */
+	font-family: 'Comick', sans;
+}
